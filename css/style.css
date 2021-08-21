@@ -101,6 +101,10 @@ body {
   margin: 0 auto;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,8 +129,15 @@ body {
 }
 @media (max-width: 768px) {
   .header__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin: 0;
     height: 70px;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -138,6 +149,7 @@ body {
     z-index: 1000;
     max-height: 100px;
     background: transparent;
+    width: 100%;
   }
 }
 
@@ -218,11 +230,11 @@ body {
 }
 
 .icon {
-  margin: 0 0 0 20px;
   display: none;
   width: 45px;
   height: 35px;
   position: relative;
+  right: 20px;
   cursor: pointer;
   z-index: 11000;
 }

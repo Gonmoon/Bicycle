@@ -7,6 +7,7 @@ $(function(){
 	$('.icon').click(function(){
 		$(this).toggleClass('icon_open');
 		$('.nav').slideToggle(300);
+		$('body').toggleClass('lock');
 	});
 	// Slider
 	$('.news__body-slider').slick({
